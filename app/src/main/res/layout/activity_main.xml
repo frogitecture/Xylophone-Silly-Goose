@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <View
+        android:id="@+id/red_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff0000"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:focusable="true" />
+
+    <View
+        android:id="@+id/orange_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff6600"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_weight="0.2"/>
+
+    <View
+        android:id="@+id/yellow_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff00"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_weight="0.2"/>
+
+
+    <View
+        android:id="@+id/green_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55ff00"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_weight="0.2"/>
+
+    <View
+        android:id="@+id/blue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0055ff"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_weight="0.2"/>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4390516561511904/7548671351">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
